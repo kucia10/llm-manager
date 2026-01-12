@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "name": "관리자",
+      "email": "admin@example.com"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "user123",
+      "name": "사용자1",
+      "email": "user1@example.com"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "개발팀",
+      "description": "프론트엔드 및 백엔드 개발",
+      "quota": 1000000,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "데이터팀",
+      "description": "데이터 분석 및 ML 모델 개발",
+      "quota": 2000000,
+      "createdAt": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "디자인팀",
+      "description": "UI/UX 디자인",
+      "quota": 500000,
+      "createdAt": "2024-01-03T00:00:00Z"
+    }
+  ],
+  "models": [
+    {
+      "id": 1,
+      "name": "GPT-4",
+      "provider": "OpenAI",
+      "type": "chat",
+      "pricePerToken": 0.0001,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Claude-3",
+      "provider": "Anthropic",
+      "type": "chat",
+      "pricePerToken": 0.00008,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "LLaMA-3",
+      "provider": "Meta",
+      "type": "chat",
+      "pricePerToken": 0.00005,
+      "isActive": true
+    }
+  ],
+  "usage": [
+    {
+      "id": 1,
+      "teamId": 1,
+      "modelId": 1,
+      "tokensUsed": 50000,
+      "cost": 5,
+      "date": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "teamId": 1,
+      "modelId": 2,
+      "tokensUsed": 30000,
+      "cost": 2.4,
+      "date": "2024-01-11T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "teamId": 2,
+      "modelId": 1,
+      "tokensUsed": 80000,
+      "cost": 8,
+      "date": "2024-01-10T00:00:00Z"
+    }
+  ]
+}

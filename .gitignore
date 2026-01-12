@@ -1,0 +1,46 @@
+# Athena
+.athena/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend (React + Vite)
+mvp-client/node_modules/
+mvp-client/dist/
+mvp-client/.vite/
+mvp-client/.env.local
+mvp-client/.env.*.local
+
+# Backend (Spring Boot + Gradle)
+mvp-server/build/
+mvp-server/.gradle/
+mvp-server/gradle-app.setting
+mvp-server/.settings/
+mvp-server/*.iml
+mvp-server/.classpath
+mvp-server/.project
+
+# H2 Database (dev only)
+mvp-server/*.db
+mvp-server/*.trace.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
